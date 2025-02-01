@@ -1,0 +1,74 @@
+/********************/
+/**** 通用样式 ****/
+/********************/
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Stone-100: hsl(30, 54%, 90%);
+  --Stone-150: hsl(30, 18%, 87%);
+  --Stone-600: hsl(30, 10%, 34%);
+  --Stone-900: hsl(24, 5%, 18%);
+  --Brown-800: hsl(14, 45%, 36%);
+  --Rose-800: hsl(332, 51%, 32%);
+  --Rose-50: hsl(330, 100%, 98%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Outfit', 'Young Serif', sans-serif;
+  font-weight: 400;
+  background-color: var(--Stone-100);
+}
+
+/* 设置图片响应式 */
+img {
+  /* 
+    max-width: 100%; 
+    height: auto;
+  */
+  width: 100%;
+  height: 300px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+/* ul ol 列表符号原本就超出容器显示 */
+ul,
+ol {
+  padding-left: 20px; /* 调整符号与左侧边界的距离 */
+}
+
+li {
+  padding-left: 20px; /* 调整文本与符号的间距 */
+  margin-bottom: 10px;
+}
+
+/* 调整项目符号的样式, 适配性比较差 */
+li::marker {
+  color: var(--Brown-800);
+  font-weight: 700;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-family: 'Young Serif';
+  font-size: 32px;
+  font-weight: 400;
+  color: var(--Brown-800);
+}
+
+span {
+  font-weight: 700;
+  color: var(--Stone-600);
+}

@@ -1,0 +1,35 @@
+/********************/
+/**** 移动端适配 ****/
+/********************/
+
+@media screen and (max-width: 640px) {
+  .recipe {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+
+  .recipe__image {
+    height: 180px;
+    margin-bottom: 20px;
+  }
+
+  .recipe__article {
+    padding: 0 30px;
+  }
+
+  .recipe__article-title {
+    font-family: 'Outlet';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.1;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .recipe__article-nutrition {
+    padding: 25px 0;
+  }
+}
