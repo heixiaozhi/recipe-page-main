@@ -19,7 +19,7 @@
   }
 
   .recipe__article-title {
-    font-family: 'Outlet';
+    /* font-family: 'Outlet'; */
     font-weight: 700;
     font-size: 32px;
     line-height: 1.1;
